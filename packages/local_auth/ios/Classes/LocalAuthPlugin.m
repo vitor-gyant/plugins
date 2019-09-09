@@ -77,8 +77,6 @@
         } else if (context.biometryType == LABiometryTypeTouchID) {
           [biometrics addObject:@"fingerprint"];
         }
-      } else {
-        [biometrics addObject:@"fingerprint"];
       }
     }
   } else if (authError.code == LAErrorTouchIDNotEnrolled) {
